@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <!-- Add this in the <head> of your HTML file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style type="text/tailwindcss">
+    @theme {
+        --color-clifford: #1abc9c;
+      }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+
+  <!-- Announcement Bar -->
+  <div class="bg-[#3c3374] text-white text-center py-2 rounded-t-2xl text-sm">
+    This is an announcement tagline for you to insert
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="flex flex-wrap items-center justify-between px-4 md:px-8 py-4 bg-white shadow">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="./assets/Icon.png" alt="Logo" class="w-6 h-8">
+      <span class="text-xl font-bold text-[#0f172a]">uifry</span>
+      <span class="text-xs font-medium text-[#0f172a]">™</span>
+    </div>
+  
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-[#0f172a] focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  
+    <!-- Nav Links -->
+    <nav id="mobile-menu" class="w-full md:w-auto md:flex md:items-center md:space-x-8 text-sm font-semibold text-[#0f172a] hidden md:block mt-4 md:mt-0">
+      <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+      </div>
+      <!-- Contact Button inside nav for mobile stacking -->
+      <div class="mt-2 md:mt-0">
+        <button class="bg-red-100 text-[#0f172a] px-4 py-2 rounded-md font-semibold shadow w-full md:w-auto">
+          Contact Now
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  <script>
+    // Simple toggle for mobile menu
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-16 max-w-7xl mx-auto">
+    <!-- Left Content -->
+    <div class="md:w-1/2 space-y-6">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-[#1e1b4b] leading-tight">
+        Launch a software businesses website today with us!
+      </h1>
+      <p class="text-gray-600 text-sm md:text-base">
+        Launch a business today with our help and get it done with amazing launch features, websites and more with
+        uifry. We help business like yours thrive every day and beyond.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap items-center space-x-4">
+        <button class="bg-red-100 text-[#1e1b4b] font-semibold px-6 py-2 rounded-md shadow">
+          Contact Now
+        </button><br><br>
+        <button class="flex items-center border border-gray-300 px-6 py-2 rounded-md font-semibold text-[#1e1b4b]">
+          Book a Demo Today
+          <span class="ml-2 text-lg">→</span>
+        </button>
+      </div>
+
+      <!-- Rating -->
+      <div class="flex items-center space-x-3 mt-4">
+        <div class="bg-red-100 p-2 rounded-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#1e1b4b]" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 17.25l6.16 3.73-1.64-7.03L21 9.75l-7.19-.61L12 2.25l-1.81 6.89L3 9.75l5.48 4.2-1.64 7.03L12 17.25z" />
+          </svg>
+        </div>
+        <p class="text-sm text-gray-700">Rated 4.9 out of 1200 reviews</p>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="relative mt-10 md:mt-0 md:w-1/2 flex justify-center items-end">
+      <!-- Background shape -->
+      <div class="w-[320px] h-[250px] md:w-[450px] md:h-[480px] relative z-0">
+        <!-- <img src="./assets/Group3.png" alt="curve" class="absolute top-0 right-0 w-24 md:w-32" /> -->
+      </div>
+
+      <!-- Foreground Image -->
+      <img src="./assets/image18.png" alt="Woman with laptop"
+        class="absolute w-[260px] md:w-[480px] z-10" />
+
+        
+
+
+  </section>
+
+  <!-- Trusted Brands Section -->
+  <section class="max-w-6xl mx-auto my-10 px-4">
+    <div
+      class="border rounded-md py-6 px-4 md:px-10 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+      <p class="font-semibold text-center md:text-left text-[#1e1b4b]">
+        Trusted by over 100+ <br class="hidden md:block"> businesses worldwide!
+      </p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <img src="D:\intern\tailwindcss\assets\intercom.png" alt="Intercom" class="w-10 h-10" />
+        <img src="D:\intern\tailwindcss\assets\treehouse.png" alt="Sendinblue" class="w-10 h-10" />
+        <img src="D:\intern\tailwindcss\assets\zapier.png" alt="Zapier" class="w-10 h-10" />
+        <img src="D:\intern\tailwindcss\assets\marvel.png" alt="Meetup" class="w-10 h-10" />
+        <img src="D:\intern\tailwindcss\assets\notion.png" alt="Notion" class="w-10 h-10" />
+        <img src="D:\intern\tailwindcss\assets\shazam.png" alt="Shazam" class="w-10 h-10" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-white text-gray-800">
+    <div class="min-h-screen flex items-center justify-center px-6 py-5">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-12 max-w-6xl w-full">
+
+        <!-- Left Section (Image + Card) -->
+        <div class="relative">
+          <img src="D:\intern\tailwindcss\assets\image11.png" alt="Businessman" class="w-80 rounded-lg shadow-lg" />
+
+          <!-- Stats Card -->
+          
+        </div>
+
+        <!-- Right Section (Text Content) -->
+        <div class="max-w-6xl mx-auto px-4 py-12">
+          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+            
+            <!-- Feature 1 -->
+            <div class="flex items-start gap-4">
+              <div class="bg-pink-100 text-black p-2 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p class="text-sm text-black">
+                Super useful and easy to with<br>over 100+ customisations!
+              </p>
+            </div>
+      
+            <!-- Feature 2 -->
+            <div class="flex items-start gap-4">
+              <div class="bg-yellow-100 text-black p-2 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <p class="text-sm text-black">
+                Super useful and easy to with<br>over 100+ customisations!
+              </p>
+            </div>
+      
+            <!-- Feature 3 -->
+            <div class="flex items-start gap-4">
+              <div class="bg-purple-200 text-black p-2 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v16h16V4H4zm8 10v-4m-4 4v-4m8 4v-4" />
+                </svg>
+              </div>
+              <p class="text-sm text-black">
+                Super useful and easy to with<br>over 100+ customisations!
+              </p>
+            </div>
+      
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-gray-800">
+    <div class="min-h-screen flex items-center justify-center px-6 py-12">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-12 max-w-6xl w-full">
+
+        <!-- Left Section (Text and Form) -->
+        <div class="max-w-xl">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Let your business thrive<br>under our supervision
+          </h2>
+          <p class="text-sm text-gray-600 mb-4">
+            Launch a business today with our help and get it done with amazing launch features, websites and more with
+            uifry.
+            We help business like yours thrive every day and beyond.
+          </p>
+          <p class="text-sm font-semibold text-black mb-6">
+            We are making every business grow!
+          </p>
+
+          <!-- Form -->
+          <form class="space-y-4">
+            <div class="relative">
+              <input type="text" placeholder="Full Name"
+                class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-300" />
+            </div>
+            <div class="relative">
+              <input type="email" placeholder="Email Address"
+                class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-300" />
+            </div>
+            <button type="submit" class="w-full bg-pink-100 text-black py-2 rounded hover:bg-pink-200 transition">
+              Contact Now &rarr;
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Section (Image + Chart Card) -->
+        <div class="relative">
+          <img src="D:\intern\tailwindcss\assets\Mask1.png" alt="Business Woman"
+            class="w-70 h-100 rounded-lg shadow-md" />
+
+          <!-- Chart Card Overlay -->
+          <div class="absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-md w-56">
+            <p class="text-sm font-semibold text-gray-700 mb-2">Business thrive supervision</p>
+            <div class="h-20 w-full">
+              <!-- Simulated chart line -->
+              <svg class="w-full h-full" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polyline fill="none" stroke="#ef476f" stroke-width="2" points="0,40 25,30 50,35 75,20 100,25" />
+                <circle cx="25" cy="30" r="2" fill="#3B82F6" />
+                <circle cx="75" cy="20" r="2" fill="#3B82F6" />
+              </svg>
+            </div>
+            <div class="flex justify-between text-xs text-gray-400 mt-1">
+              <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="max-w-7xl mx-auto px-4">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-[#1F1F49] mb-2">Our latest updates for you here!</h2>
+      <p class="text-sm text-gray-500">What's happening around the World.</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="space-y-4">
+        <img src="D:\intern\tailwindcss\assets\Rectangle1.png" alt="Growth Article"
+          class="w-full rounded-md object-cover h-56">
+        <p class="text-xs text-gray-500 font-medium">Growth</p>
+        <h3 class="text-md font-semibold text-[#1F1F49] leading-snug">
+          15 ways to grow your saas in 21 days with no money
+        </h3>
+        <button class="text-pink-600 text-xl">
+          &rarr;
+        </button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="space-y-4">
+        <img src="D:\intern\tailwindcss\assets\Rectangle2.png" alt="Career Article"
+          class="w-full rounded-md object-cover h-56">
+        <p class="text-xs text-gray-500 font-medium">Career</p>
+        <h3 class="text-md font-semibold text-[#1F1F49] leading-snug">
+          Why everyone is moving today to subscriptions
+        </h3>
+        <button class="text-pink-600 text-xl">
+          &rarr;
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="space-y-4">
+        <img src="D:\intern\tailwindcss\assets\Rectangle21.png" alt="Design Article"
+          class="w-full rounded-md object-cover h-56">
+        <p class="text-xs text-gray-500 font-medium">Design</p>
+        <h3 class="text-md font-semibold text-[#1F1F49] leading-snug">
+          9 ways to make it quick and never look back again in your life
+        </h3>
+        <button class="text-pink-600 text-xl">
+          &rarr;
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+
+      <!-- Left Section -->
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold text-[#1F1F49] mb-4">
+          Let your business thrive<br>under our supervision
+        </h2>
+        <p class="text-sm text-gray-600 mb-6">
+          Launch a business today with our help and get it done with amazing launch features, websites and more with
+          uifry. We help business like yours thrive every day and beyond.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="bg-pink-100 text-black p-2 rounded">
+              ✅
+            </div>
+            <div>
+              <p class="text-lg font-semibold">100+</p>
+              <p class="text-xs text-gray-500">Successful Projects</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="bg-pink-100 text-black p-2 rounded">
+              ✅
+            </div>
+            <div>
+              <p class="text-lg font-semibold">978+</p>
+              <p class="text-xs text-gray-500">Clients Today</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex items-center gap-4">
+          <button class="bg-pink-100 text-black px-6 py-2 rounded hover:bg-pink-200 transition">Contact Now</button>
+          <button class="border border-pink-100 px-4 py-2 rounded hover:bg-pink-50 transition">
+            &rarr; Book a Demo Today
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="flex-1 relative">
+        <img src="D:\intern\tailwindcss\assets\image11.png" alt="Business Professional"
+          class="w-80 rounded-lg shadow-md mx-auto" />
+
+        <!-- Overlay Card -->
+        <div class="absolute bottom-4 right-4 bg-white p-4 rounded-xl shadow-md w-64">
+          <p class="text-sm font-medium text-gray-700">Clients file scanning</p>
+          <p class="text-xs text-gray-400 mb-2">Total Clients</p>
+          <p class="text-xl font-bold text-[#1F1F49]">$897,543</p>
+          <div class="w-full bg-gray-100 h-2 rounded mt-3">
+            <div class="bg-pink-500 h-2 rounded" style="width: 14%"></div>
+          </div>
+          <div class="flex justify-between text-xs text-gray-400 mt-1">
+            <span>14%</span><span>$5M</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto p-6">
+    <div class="text-center">
+      <div class="flex justify-center mb-2">
+        <div class="w-10 h-10 text-white rounded-full flex items-center justify-center">
+          <span class="text-xl font-bold"><img src="./assets/Icon.png" alt=""></span>
+        </div>
+      </div>
+      <h1 class="text-2xl font-bold text-gray-900">Frequently asked questions</h1>
+      <p class="text-sm text-gray-500 mt-1">Whats happening around the World.</p>
+    </div>
+
+    <!-- Open FAQ -->
+    <div class="mt-8">
+      <div class="bg-purple-900 text-white px-6 py-4 rounded-t-lg font-medium flex justify-between items-center">
+        <span>What is the best way to create a saas business today?</span>
+        <span>-</span>
+      </div>
+      <div class="bg-gray-100 text-gray-800 px-6 py-4 border border-t-0 rounded-b-lg">
+        <p class="mb-4">
+          Launch a business today with our help and get it done with amazing launch features, websites and more with
+          uifry.
+          We help business like yours thrive every day and beyond. Launch a business today with our help and get it done
+          with amazing launch features, websites and more with uifry. We help business like yours thrive every day and
+          beyond.
+        </p>
+        <p>
+          Launch a business today with our help and get it done with amazing launch features, websites and more with
+          uifry.
+          We help business like yours thrive every day and beyond. Launch a business today with our help and get it done
+          with amazing launch features, websites and more with uifry. We help business like yours thrive every day and
+          beyond.
+        </p>
+      </div>
+    </div>
+
+    <!-- Closed FAQs -->
+    <div class="mt-4 border rounded-lg px-6 py-4 flex justify-between items-center cursor-pointer">
+      <span>What is the best way to create a saas business today?</span>
+      <span>+</span>
+    </div>
+    <div class="mt-2 border rounded-lg px-6 py-4 flex justify-between items-center cursor-pointer">
+      <span>What is the best way to create a saas business today?</span>
+      <span>+</span>
+    </div>
+    <div class="mt-2 border rounded-lg px-6 py-4 flex justify-between items-center cursor-pointer">
+      <span>What is the best way to create a saas business today?</span>
+      <span>+</span>
+    </div>
+    <div class="mt-2 border rounded-lg px-6 py-4 flex justify-between items-center cursor-pointer">
+      <span>What is the best way to create a saas business today?</span>
+      <span>+</span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-6 flex gap-4 justify-center">
+      <button class="bg-pink-200 text-pink-800 font-semibold px-5 py-2 rounded-lg">Contact Now</button>
+      <button
+        class="flex items-center bg-white border border-gray-300 px-5 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100">
+        <span class="mr-2">➤</span> Book a Demo Today
+      </button>
+    </div>
+  </section>
+
+
+  <footer class="bg-white rounded-t-3xl border-t border-gray-200 py-6 px-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <!-- Left Section -->
+      <div class="flex items-center space-x-4 mb-4 md:mb-0">
+        <img src="./assets/Icon.png" alt="Logo" class="w-5 h-6" />
+        <span class="font-bold text-lg">uifry</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="flex space-x-6 text-sm font-medium text-gray-700">
+        <a href="#" class="hover:text-gray-900">Home</a>
+        <a href="#" class="hover:text-gray-900">About</a>
+        <a href="#" class="hover:text-gray-900">Pricing</a>
+        <a href="#" class="hover:text-gray-900">Blog</a>
+        <a href="#" class="hover:text-gray-900">Contact</a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="my-6 border-t border-gray-200" />
+
+    <!-- Bottom Row -->
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+      <p class="text-gray-500 mb-4 md:mb-0">All rights reserved Ⓒ uifry.com | Terms and conditions apply!</p>
+
+      <!-- Social Icons (use Heroicons, FontAwesome, or placeholders here) -->
+      <div class="flex items-center space-x-4 text-black-500 text-base ">
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://pinterest.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
